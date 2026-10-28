@@ -796,7 +796,7 @@
     <div id="tint"></div>
     <div id="night"></div>
     <div id="vig"></div>
-    <nav><b>AT</b><a data-f="0">Accueil</a><a data-f=".18">À propos</a><a data-f=".33">Stack</a><a
+    <nav><b>AG</b><a data-f="0">Accueil</a><a data-f=".18">À propos</a><a data-f=".33">Stack</a><a
             data-f=".55">Projets</a><a data-f=".87">Contact</a></nav>
     <div id="hero">
         <h1>Alex<br>Giel</h1>
@@ -919,7 +919,7 @@
                 [.33, T('Boîte à outils', 'Compétences') + '<p>Les écussons cousus sur mon sac :</p>' + PA.map(([n, c, t], i) => `<span class="pa" title="${t}" style="background:${c};border-radius:${['50%', '8px', '4px 16px'][i % 3]}">${n}</span>`).join('')],
                 [.55, T('Projet 1', 'Planora') + '<p>Application de gestion de réservation de ressources (salles de réunion, véhicules, équipements…).</p>' + tg(['PHP', 'JavaScript', 'SQLite', 'Tailwind']) + '<p></p><button class="btn" data-p="0">Voir le projet</button>'],
                 [.74, T('Projet 2', 'CCS') + '<p>Application de suivi des appels connectée à un système de standard téléphonique.</p>' + tg(['PHP', 'JavaScript', 'Chart.js']) + '<p></p><button class="btn" data-p="1">Voir le projet</button>'],
-                [.87, T('Fin du sentier', 'Contact') + '<p>Un projet en tête ? Passez à la cabane, il y a toujours du café.</p><button class="btn" data-pc>Écrire une carte postale</button><p></p><a class="btn alt" href="#">GitHub</a><a class="btn alt" href="#">LinkedIn</a>']];
+                [.87, T('Fin du sentier', 'Contact') + '<p>Un projet en tête ? Passez à la cabane, il y a toujours du café.</p><button class="btn" data-pc>Écrire une carte postale</button><p></p><a class="btn alt" href="https://github.com/AlexJLDev/">GitHub</a><a class="btn alt" href="https://www.linkedin.com/in/alexandre-giel-506018398/">LinkedIn</a>']];
             const world = document.getElementById('world'), tilt = document.getElementById('tilt'), stage = document.getElementById('stage'), $ = id => document.getElementById(id);
             let W, sc, vw, vh, mob, Ox, Oy, tx = 0, ty = 0, els = [];
             S.forEach(([f, h], i) => { const e = document.createElement('div'); e.className = 'sign'; e.innerHTML = `<div class="kiosk"><div class="roof"></div><div class="fr"><i></i><div class="board">${i > 1 && i < 4 ? shot(i - 2) : '<div class="map"></div>'}${h}</div><i></i></div></div>`; $('signs').appendChild(e); els.push(e) });
